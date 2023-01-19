@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="2" name="com.mycompany.mavenproject1.Mavenproject1Test" time="0.004" errors="0" skipped="0">
+<testsuite tests="6" failures="2" name="com.mycompany.mavenproject1.Mavenproject1Test" time="0.006" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="19.0.2+7-44"/>
@@ -63,7 +63,7 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase classname="com.mycompany.mavenproject1.Mavenproject1Test" name="com.mycompany.mavenproject1.Mavenproject1Test.testAdd" time="0"/>
+  <testcase classname="com.mycompany.mavenproject1.Mavenproject1Test" name="com.mycompany.mavenproject1.Mavenproject1Test.testAdd" time="0.001"/>
   <testcase classname="com.mycompany.mavenproject1.Mavenproject1Test" name="com.mycompany.mavenproject1.Mavenproject1Test.testSubtract1" time="0"/>
   <testcase classname="com.mycompany.mavenproject1.Mavenproject1Test" name="com.mycompany.mavenproject1.Mavenproject1Test.testSubtract2" time="0.004">
     <failure message="expected: &lt;5&gt; but was: &lt;-5&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;5&gt; but was: &lt;-5&gt;
@@ -72,19 +72,19 @@
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
 	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
-	at com.mycompany.mavenproject1.Mavenproject1Test.testSubtract2(Mavenproject1Test.java:57)
+	at com.mycompany.mavenproject1.Mavenproject1Test.testSubtract2(Mavenproject1Test.java:36)
 </failure>
   </testcase>
   <testcase classname="com.mycompany.mavenproject1.Mavenproject1Test" name="com.mycompany.mavenproject1.Mavenproject1Test.testMultiply" time="0"/>
   <testcase classname="com.mycompany.mavenproject1.Mavenproject1Test" name="com.mycompany.mavenproject1.Mavenproject1Test.testDivide1" time="0"/>
-  <testcase classname="com.mycompany.mavenproject1.Mavenproject1Test" name="com.mycompany.mavenproject1.Mavenproject1Test.testDivide2" time="0">
+  <testcase classname="com.mycompany.mavenproject1.Mavenproject1Test" name="com.mycompany.mavenproject1.Mavenproject1Test.testDivide2" time="0.001">
     <failure message="expected: &lt;5&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;5&gt; but was: &lt;0&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
 	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
-	at com.mycompany.mavenproject1.Mavenproject1Test.testDivide2(Mavenproject1Test.java:72)
+	at com.mycompany.mavenproject1.Mavenproject1Test.testDivide2(Mavenproject1Test.java:52)
 </failure>
   </testcase>
 </testsuite>

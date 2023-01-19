@@ -4,10 +4,7 @@
  */
 package com.mycompany.mavenproject1;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.BeforeAll;
+// junit imports 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -16,35 +13,17 @@ import static org.junit.jupiter.api.Assertions.*;
  * @author devanbabcock
  */
 public class Mavenproject1Test {
+    // Here we create an instance of our main application named calculator
     private final Mavenproject1 calculator = new Mavenproject1();
-
     
-    public Mavenproject1Test() {
-    }
-
-    @org.junit.jupiter.api.BeforeAll
-    public static void setUpClass() throws Exception {
-    }
-
-    @org.junit.jupiter.api.AfterAll
-    public static void tearDownClass() throws Exception {
-    }
-
-    @org.junit.jupiter.api.BeforeEach
-    public void setUp() throws Exception {
-        app = new Mavenproject1();
-    }
-
-    @org.junit.jupiter.api.AfterEach
-    public void tearDown() throws Exception {
-    }
-
-    /**
-     * Test of main method, of class Mavenproject1.
-     */
+    // Invoke the junit test functionality
     @org.junit.jupiter.api.Test
+    // Assert that the add function from the main application returns the 
+    //  expected value (20) when passed x(5) and y(15)
     public void testAdd() {
         assertEquals(20, calculator.add(5, 15));
+        // When a test is run, failures will return 
+        // both the expected and actual values
     }
     
     @org.junit.jupiter.api.Test
@@ -55,6 +34,7 @@ public class Mavenproject1Test {
     @org.junit.jupiter.api.Test
     public void testSubtract2() {
         assertEquals(5, calculator.subtract(5, 10));
+        // This test throws a failure due to a lack of fleibility in input order
     }
     
     @org.junit.jupiter.api.Test
@@ -70,5 +50,6 @@ public class Mavenproject1Test {
     @org.junit.jupiter.api.Test
     public void testDivide2() {
         assertEquals(5, calculator.divide(4, 20));
+        // This test throws a failure due to a lack of fleibility in input order
     }
 }
